@@ -4,7 +4,7 @@ import game
 
 class Player:
 	def __init__(self, letter): #letter is x or o
-	self.letter = letter
+		self.letter = letter
 
 	def get_move(self, game):
 		pass
@@ -36,5 +36,5 @@ class HumanPlayer(Player):
 					raise ValueError
 				valid_square = True #if these are successful, then yay!
 			except ValueError:
-					print('Invalid square. Try again.')99
+					print('Invalid square. Try again.')
 		return val
