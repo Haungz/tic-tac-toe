@@ -60,6 +60,9 @@ class TicTacToe:
 			if all([spot == letter for spot in diagonal2]):
 				return True
 
+		#if all of these fail
+		return False
+		
 def play(game, x_player, o_player, print_game=True):
 	if print_game:
 		game.print_board_nums()
